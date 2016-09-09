@@ -9,7 +9,7 @@ public class BookClass
 	
 	public BookClass()
 	{
-		System.out.println("Book created");
+//		System.out.println("Book created");
 
 		
 	}
@@ -47,29 +47,14 @@ public class BookClass
 	{
 		return title;
 	}
-//	public void checkStock(String titl,int qty)
-//	{
-//		double price2 = 0;
-//		int q = 0;
-//		for (int j=0; j<=i; j++)
-//		{
-//			if (title.equals(titl))
-//			{
-//				q++;
-//				price2 = price;
-//				System.out.println("Found "+ getDisplayText(j));
-//			}
-//		}
-//		System.out.println ("Found " + q + "number");
-//		if (q<=qty)
-//			System.out.println("The price of " + qty + "books is :" + (price2)*qty );
-//		else 
-//		{
-//			System.out.println("There are not enough books but");
-//			System.out.println("The price of " + q + "books is :" + (price2)*q );
-//		}
-//		
-//	}
+	
+	public double getLineItem(int qty )
+	{
+		
+		System.out.println(String.format(author + "\t" + qty + "\t" + title + "\t" + description + "\t" + price));
+		return price;
+	}
+
 	
 }
 

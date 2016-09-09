@@ -5,6 +5,8 @@ public class BookApp
 	public static void main(String[] args) 
 	{
 		BookDB db = new BookDB();
+		
+		BookDB sb = new BookDB("lotr");
 
 		System.out.println("Enter an sku");
 		Scanner sc = new Scanner(System.in);
@@ -15,7 +17,7 @@ public class BookApp
 		
 	
 		
-		//System.out.println(b.getDisplayText());
+		System.out.println(b.getDisplayText());
 	
 		
 		
